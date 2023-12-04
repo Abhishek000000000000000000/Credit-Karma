@@ -2,10 +2,11 @@ import React, { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
-const initialState = {
+export const initialState = {
   isAuth: false,
   userName: "",
-  cart:[]
+  cart: [],
+  count: 0,
 };
 
 const AuthContextProvider = ({ children }) => {

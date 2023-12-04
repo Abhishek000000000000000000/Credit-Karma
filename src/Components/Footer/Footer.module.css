@@ -1,0 +1,38 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  margin: 50px;
+}
+
+.container > h3 {
+  margin-bottom: 20px;
+  font-size: 2vw;
+}
+
+#company {
+  color: #486e00;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content > span {
+  color: grey;
+  margin: 10px 0px;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1067px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

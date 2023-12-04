@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contents {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contents > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.links {
+  display: flex;
+  width: 23%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.search {
+  display: flex;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search > input {
+  border: none;
+}
+
+.links > span > a {
+  text-decoration: none;
+  color: #486e00;
+}
+
+.links > span > span {
+  color: #486e00;
+}
+.cart {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.cart > span {
+  background-color: #486e00;
+  border-radius: 50%;
+  padding: 1px 6px;
+  color: white;
+  position: absolute;
+  left: 12px;
+  top: -9px;
+}
+
+#ham {
+  display: none;
+}
+
+@media screen and (width<=1000px) {
+  .contents {
+    display: none;
+  }
+  .search {
+    border: none;
+  }
+  .search > input {
+    display: none;
+  }
+  #ham {
+    display: block;
+  }
+  .links {
+    width: 85%;
+    justify-content: flex-end;
+    gap: 14px;
+    padding-right: 12px;
+    align-items: center;
+  }
+}
