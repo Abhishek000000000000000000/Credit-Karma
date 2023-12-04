@@ -5,6 +5,7 @@ export const AuthContext = createContext();
 const initialState = {
   isAuth: false,
   userName: "",
+  cart:[]
 };
 
 const AuthContextProvider = ({ children }) => {
