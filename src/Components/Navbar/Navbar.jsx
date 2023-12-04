@@ -55,7 +55,7 @@ const Navbar = () => {
               navigate("/cart");
             }}
           />
-          <span>{count}</span>
+          {/* <span>{count}</span> */}
         </div>
         <img src="images\navbar_images\list-icon.svg" id={styles.ham} />
       </div>
